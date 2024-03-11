@@ -11,10 +11,15 @@
 /* --> RUTAS DE ARCHIVOS EN CARPETA SISTEMA_FICHEROS
 -------------------------------------------------------
  ../../SISTEMA_FICHEROS/
+-------------------------------------------------------
 
- ../../SISTEMA_FICHEROS/consolidado.csv
+ --->> PORFAVOR, NO TOCAR .GITIGNORE :) <<---
+
+ ../../SISTEMA_FICHEROS/data/consolidado.csv
+
+ ../../SISTEMA_FICHEROS/logs/log_File.log
+ 
  ../../SISTEMA_FICHEROS/fp.conf
- ../../SISTEMA_FICHEROS/log_File.log
 
  ../../SISTEMA_FICHEROS/scripts/generateData.sh
 -------------------------------------------------------*/
