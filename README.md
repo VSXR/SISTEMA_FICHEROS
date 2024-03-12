@@ -1,6 +1,8 @@
-# ORGANIZACION DE CARPETAS
+# PROGRAMA UFVaudita
 
-*data -->* contiene los archivos con extension .csv
+### ORGANIZACION DE CARPETAS
+
+*data -->* contiene los archivos con extension .csv y .pdf
 	
 *include -->* contiene los archivos con cabecera .h 
 
