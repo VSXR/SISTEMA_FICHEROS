@@ -1,11 +1,10 @@
-// BIBLIOTECAS
-#include <pthread.h>  // concurrencia/multihilo
-#include <stdio.h>    // estándar de entrada/salida
-#include <stdlib.h>   // estándar de funciones de utilidad general
-#include <stdbool.h>  // tipos booleanos y valores true/false
-#include <string.h>   // manejo de cadenas de caracteres
-#include <ctype.h>    // funciones para manipular caracteres
-#include <time.h>     // manejo de tiempo
-#include <errno.h>    // manejo de errores
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+#include <errno.h>
 
 #include "../../SISTEMA_FICHEROS/include/consolidado.h"
