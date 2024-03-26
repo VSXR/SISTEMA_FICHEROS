@@ -1,41 +1,29 @@
 #!/bin/bash
 
-home_directory="$HOME"
-echo "Directorio de inicio del usuario: $home_directory"
+mkdir -p logs
+mkdir -p data
 
-carpeta_especifica="UFV-AUDITA"
-directorio_especifico_en_ingles="$home_directory/Downloads/$carpeta_especifica"
+programa="./src/main"
 
-# Si no se encuentra en "Downloads", buscar en "Descargas"
-if [ ! -d "$directorio_especifico_en_ingles" ]; then
-    directorio_especifico_en_espanol="$home_directory/Descargas/$carpeta_especifica"
-    if [ ! -d "$directorio_especifico_en_espanol" ]; then
-        echo "No se encontró el directorio especificado ni en 'Downloads' ni en 'Descargas'. Saliendo..."
-        exit 1
-    else
-        directorio_especifico="$directorio_especifico_en_espanol"
-    fi
-else
-    directorio_especifico="$directorio_especifico_en_ingles"
+log_file="./logs/registro.log"
+csv_file="./data/consolidado.csv"
+
+# Compilar el programa C si aún no está compilado
+if [ ! -f "$programa" ]; then
+    echo "Compilando el programa C..."
+    gcc main.c -o main
 fi
 
-# Navegar al directorio especificado
-cd "$directorio_especifico" || { echo "No se pudo cambiar al directorio especificado. Saliendo..."; exit 1; }
+# Ejecutar el programa C y redirigir la salida a un archivo de registro
+$programa > $log_file 2>&1
 
-# Verificar que estamos en el directorio correcto
-if [ "$(pwd)" == "$directorio_especifico" ]; then
-    echo "Ahora estás en el directorio especificado."
-    # Aquí puedes realizar las operaciones que necesites en este directorio
-    # Por ejemplo, crear archivos
-    touch archivo1.txt
-    touch archivo2.txt
-    echo "Archivos creados en $(pwd)"
+if [ $? -eq 0 ]; then
+    echo "El programa se ejecutó correctamente."
 else
-    echo "No se pudo cambiar al directorio especificado. Saliendo..."
-    exit 1
+    echo "Se produjo un error al ejecutar el programa."
 fi
 
-# Volver al directorio original
-cd "$home_directory" || { echo "No se pudo volver al directorio original."; exit 1; }
-echo "Volviste al directorio original: $(pwd)"
+touch $csv_file
 
+echo "Se ha creado el archivo de registro $log_file"
+echo "Se ha creado el archivo CSV $csv_file"
