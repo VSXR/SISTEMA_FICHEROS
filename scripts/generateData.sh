@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usuario=$(whoami)
-carpeta_programa="/home/$usuario/Downloads/UFVAUDITA"
+carpeta_programa="$HOME/Descargas/SISTEMA_FICHEROS"
 
 mkdir -p "$carpeta_programa/logs"
 mkdir -p "$carpeta_programa/data"
