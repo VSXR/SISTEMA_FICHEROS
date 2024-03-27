@@ -15,12 +15,17 @@
 #include  "../../SISTEMA_FICHEROS/include/monitor.h"
 #include  "../../SISTEMA_FICHEROS/include/patrones_semafaro.h"
 
+/* RUTAS DE ARCHIVOS EN LOS QUE HAY QUE ESCRIBIR:
+consolidado.csv -> ../../SISTEMA_FICHEROS/data/consolidado.csv"
+registro.log -> ../../SISTEMA_FICHEROS/logs/registro.log"
+*/
+
 int main(void) {
     system("../../SISTEMA_FICHEROS/scripts/generateData.sh");
 
 
 
-    
+
     printf("good");
     return 0;
 }
