@@ -1,0 +1,6 @@
+#ifndef MANEJAR_ARCHIVOS_H
+#define MANEJAR_ARCHIVOS_H
+
+
+
+#endif // MANEJAR_ARCHIVOS_H

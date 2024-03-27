@@ -12,8 +12,10 @@
 #include  "../../SISTEMA_FICHEROS/include/consolidado.h"
 #include  "../../SISTEMA_FICHEROS/include/file_processor.h"
 #include  "../../SISTEMA_FICHEROS/include/logger.h"
+#include "../../SISTEMA_FICHEROS/include/manejarArchivos.h"
 #include  "../../SISTEMA_FICHEROS/include/monitor.h"
 #include  "../../SISTEMA_FICHEROS/include/patrones_semafaro.h"
+
 
 /* RUTAS DE ARCHIVOS EN LOS QUE HAY QUE ESCRIBIR:
 consolidado.csv -> ../../SISTEMA_FICHEROS/data/consolidado.csv"
