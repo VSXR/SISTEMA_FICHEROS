@@ -8,24 +8,26 @@
 #include <time.h>     // manejo de tiempo
 #include <errno.h>    // manejo de errores
 
-#include  "../../SISTEMA_FICHEROS/include/config_parser.h"
-#include  "../../SISTEMA_FICHEROS/include/consolidado.h"
-#include  "../../SISTEMA_FICHEROS/include/file_processor.h"
-#include  "../../SISTEMA_FICHEROS/include/logger.h"
-#include  "../../SISTEMA_FICHEROS/include/monitor.h"
-#include  "../../SISTEMA_FICHEROS/include/patrones_semafaro.h"
+#include "../../SISTEMA_FICHEROS/include/manejarArchivos.h"
+#include  "../../SISTEMA_FICHEROS/include/manejarFileProcessor.h"
+#include "../../SISTEMA_FICHEROS/include/manejarProcesos.h"
+#include  "../../SISTEMA_FICHEROS/include/manejarSemafaro.h"
+#include "../../SISTEMA_FICHEROS/include/manejarSucursales.h"
 
-/* RUTAS DE ARCHIVOS EN LOS QUE HAY QUE ESCRIBIR:
-consolidado.csv -> ../../SISTEMA_FICHEROS/data/consolidado.csv"
-registro.log -> ../../SISTEMA_FICHEROS/logs/registro.log"
-*/
 
 int main(void) {
     system("../../SISTEMA_FICHEROS/scripts/generateData.sh");
+    char csv[] = "../../SISTEMA_FICHEROS/data/consolidado.csv";
+    char log[] = "../../SISTEMA_FICHEROS/logs/registro.log";
+
+    LeerCsv(csv);
+    EscribirCsv(log);
+    
+    LeerLog(csv);
+    EscribirLog(log);
 
 
 
-
-    printf("good");
+    printf("good\n");
     return 0;
 }
