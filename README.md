@@ -1,6 +1,6 @@
 # PROGRAMA UFVaudita
 
-### ORGANIZACION DE CARPETAS
+### ESTRUCTURA DE LAS CARPETAS
 
 *data -->* contiene los archivos con extension .csv
 	
