@@ -16,6 +16,10 @@
 #include  "../../SISTEMA_FICHEROS/include/patrones_semafaro.h"
 
 int main(void) {
+    system("../../SISTEMA_FICHEROS/scripts/generateData.sh");
+
+
+
     
     printf("good");
     return 0;
