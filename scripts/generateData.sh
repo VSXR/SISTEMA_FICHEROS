@@ -1,21 +1,20 @@
 #!/bin/bash
 
-mkdir -p logs
-mkdir -p data
+usuario=$(whoami)
+carpeta_programa="/home/$usuario/Downloads/UFVAUDITA"
 
-programa="./src/main"
+mkdir -p "$carpeta_programa/logs"
+mkdir -p "$carpeta_programa/data"
 
-log_file="./logs/registro.log"
-csv_file="./data/consolidado.csv"
+programa="$carpeta_programa/src/main"
+log_file="$carpeta_programa/logs/registro.log"
+csv_file="$carpeta_programa/data/consolidado.csv"
 
-# Compilar el programa C si aún no está compilado
 if [ ! -f "$programa" ]; then
-    echo "Compilando el programa C..."
-    gcc main.c -o main
+    gcc "$carpeta_programa/src/main.c" -o "$programa"
 fi
 
-# Ejecutar el programa C y redirigir la salida a un archivo de registro
-$programa > $log_file 2>&1
+"$programa" > "$log_file" 2>&1
 
 if [ $? -eq 0 ]; then
     echo "El programa se ejecutó correctamente."
@@ -23,7 +22,7 @@ else
     echo "Se produjo un error al ejecutar el programa."
 fi
 
-touch $csv_file
+touch "$csv_file"
 
 echo "Se ha creado el archivo de registro $log_file"
 echo "Se ha creado el archivo CSV $csv_file"
