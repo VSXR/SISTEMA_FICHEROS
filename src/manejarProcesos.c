@@ -7,4 +7,8 @@
 #include <time.h>
 #include <errno.h>
 
-#include "../../SISTEMA_FICHEROS/include/monitor.h"
+#include "../../SISTEMA_FICHEROS/include/manejarProcesos.h"
+
+void funcionMonitor(){
+    
+}

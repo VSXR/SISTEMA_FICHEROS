@@ -1,6 +1,0 @@
-#ifndef CONSOLIDADO_H
-#define CONSOLIDADO_H
-
-
-
-#endif // CONSOLIDADO_H

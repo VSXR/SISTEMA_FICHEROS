@@ -1,6 +1,0 @@
-#ifndef PATRONES_SEMAFORO_H
-#define PATRONES_SEMAFORO_H
-
-
-
-#endif // PATRONES_SEMAFORO_H

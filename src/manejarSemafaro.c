@@ -7,4 +7,6 @@
 #include <time.h>
 #include <errno.h>
 
-#include "../../SISTEMA_FICHEROS/include/consolidado.h"
+#include "../../SISTEMA_FICHEROS/include/manejarSemafaro.h"
+
+
