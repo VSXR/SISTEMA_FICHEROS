@@ -27,6 +27,7 @@ void EscribirCsv(char *archivoCsv){
         fclose(archivo);
     }
 }
+
 void LeerCsv(char *archivoCsv){
     printf("--> LEEYENDO EL ARCHIVO 'consolidado.csv'... <--\n\n");
 
@@ -46,6 +47,9 @@ void LeerCsv(char *archivoCsv){
     }
 }
 
+
+
+
 void EscribirLog(char *archivoLog){
     printf("--> ESCRIBIENDO EN EL ARCHIVO 'registro.log'... <--\n\n");
     
@@ -62,6 +66,7 @@ void EscribirLog(char *archivoLog){
         fclose(archivo);
     }
 }
+
 void LeerLog(char *archivoLog){
     printf("--> LEEYENDO EL ARCHIVO 'registro.log'... <--\n\n");
 
