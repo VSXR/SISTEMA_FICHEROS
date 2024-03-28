@@ -4,10 +4,8 @@ source generateData.sh
 source generateFile.sh
 
 main(){
-    generateFile
-    generateData
-
-    
+    generateFileFunction
+    # generateDataFunction
 }
 
 main
