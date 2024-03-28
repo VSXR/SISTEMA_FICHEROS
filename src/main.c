@@ -16,9 +16,9 @@
 
 
 int main(void) {
-    system("../../SISTEMA_FICHEROS/scripts/generateData.sh");
+    system("../../SISTEMA_FICHEROS/scripts/mainScript.sh");
     char csv[] = "../../SISTEMA_FICHEROS/data/consolidado.csv";
-    char log[] = "../../SISTEMA_FICHEROS/logs/registro.log";
+    char log[] = "../../SISTEMA_FICHEROS/logs/log_File.log";
 
     LeerCsv(csv);
     EscribirCsv(log);
