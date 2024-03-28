@@ -16,15 +16,15 @@
 
 
 int main(void) {
-    system("../../SISTEMA_FICHEROS/scripts/mainScript.sh");
-    char csv[] = "../../SISTEMA_FICHEROS/data/consolidado.csv";
-    char log[] = "../../SISTEMA_FICHEROS/logs/log_File.log";
+    system("../../SISTEMA_FICHEROS/scripts/generateFile.sh");
+    // char csv[] = "../../SISTEMA_FICHEROS/data/consolidado.csv";
+    // char log[] = "../../SISTEMA_FICHEROS/logs/log_File.log";
 
-    LeerCsv(csv);
-    EscribirCsv(log);
+    // LeerCsv(csv);
+    // EscribirCsv(log);
     
-    LeerLog(csv);
-    EscribirLog(log);
+    // LeerLog(csv);
+    // EscribirLog(log);
 
 
 

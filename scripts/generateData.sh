@@ -19,5 +19,3 @@ generateDataFunction() {
         fi
     done
 }
-
-generateDataFunction

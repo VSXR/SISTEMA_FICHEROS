@@ -1,9 +1,5 @@
 {
     "files.associations": {
-        "*.rmd": "markdown",
-        ".fantomasignore": "ignore",
-        "config_parser.h": "c",
-        "patrones_semafaro.h": "c",
-        "manejararchivos.h": "c"
+        "*.rmd": "markdown"
     }
 }

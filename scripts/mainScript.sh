@@ -5,7 +5,7 @@ source generateFile.sh
 
 main(){
     generateFileFunction
-    generateDataFunction
+    # generateDataFunction
 }
 
 main
