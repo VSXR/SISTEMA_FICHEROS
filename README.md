@@ -1,6 +1,6 @@
 # PROGRAMA UFVaudita
 
-### ORGANIZACION DE CARPETAS
+### ESTRUCTURA DE LAS CARPETAS DE LA PRACTICA
 
 *data -->* contiene los archivos con extension .csv
 	
